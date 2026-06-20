@@ -1,4 +1,4 @@
-import magic
+# import magic
 import msoffcrypto
 from PyPDF2 import PdfReader
 
@@ -16,19 +16,19 @@ SUPPORTED_EXTENSIONS = {"pdf", "docx", "pptx", "xlsx"}
 def detect_file_type(path: str) -> str:
     return Path(path).suffix.lower().lstrip(".")
 
-def check_file_type(path: str) -> str:
-    p = Path(path)
+# def check_file_type(path: str) -> str:
+#     p = Path(path)
 
-    print("DEBUG path:", p.resolve())
-    print("EXISTS:", p.exists())
+#     print("DEBUG path:", p.resolve())
+#     print("EXISTS:", p.exists())
 
-    if not p.exists():
-        raise FileNotFoundError(f"File not found: {p}")
+#     if not p.exists():
+#         raise FileNotFoundError(f"File not found: {p}")
 
-    mime = magic.Magic(mime=True)
-    file_type = mime.from_file(str(p))
-    print("RAW MIME:", file_type)
-    return file_type
+#     mime = magic.Magic(mime=True)
+#     file_type = mime.from_file(str(p))
+#     print("RAW MIME:", file_type)
+#     return file_type
 
 def is_password_protected(ext: str, path: str) -> bool:
 
