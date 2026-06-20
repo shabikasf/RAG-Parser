@@ -1,7 +1,6 @@
 pydantic
 fastapi
 uvicorn
-python-magic-bin
 python-docx
 python-pptx
 pymupdf
