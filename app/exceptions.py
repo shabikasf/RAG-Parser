@@ -1,0 +1,2 @@
+class PasswordProtectedError(Exception):
+    pass

@@ -1,0 +1,15 @@
+pydantic
+fastapi
+uvicorn
+python-magic-bin
+python-docx
+python-pptx
+pymupdf
+openpyxl
+PyPDF2
+msoffcrypto-tool
+chromadb
+tiktoken
+sentence-transformers
+openai
+python-multipart
