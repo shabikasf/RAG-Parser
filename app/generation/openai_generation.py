@@ -14,6 +14,9 @@ class OpenAIGenerator(Generator):
         prompt = f"""
 Use ONLY the supplied context.
 
+When using information from the context,
+cite the chunk number like [Chunk 0].
+
 If the answer is not present,
 say:
 'I could not find this information in the provided documents.'
@@ -26,7 +29,7 @@ Question:
 """
 
         response = self.llm.chat.completions.create(
-            model="meta/llama-3.3-70b-instruct",
+            model="llama-3.3-70b-versatile",
             messages=[
                 {
                     "role": "user",
