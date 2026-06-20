@@ -25,7 +25,7 @@ class QueryService:
             context=context
         )
 
-        citations = self.extract_citations(
+        citations = self.llm.extract_citations(
             answer
         )
 
